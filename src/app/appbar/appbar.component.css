@@ -1,0 +1,8 @@
+.nav-item > a , .navbar-brand{
+    color: white;
+    
+}
+
+.navbar-left .nav-item>.active{
+    border-bottom: 4px solid #2a5788;
+}
