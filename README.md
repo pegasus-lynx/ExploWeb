@@ -9,49 +9,14 @@ This repository hosts the code for Web Interface of Recommender System. Using An
 - npm package manager
 
 ### Setting Up Env.
-1. Setting the virtual enviornment
-    - Install virtualenv, virtualenvwrapper(optional)
-    ```shell
-    pip install virtualenv
-    pip install virtualenvwrapper
-    ```
-    -Add the following variable to .bashrc
-    ```shell
-    export WORKON_HOME=~/.virtualenv
-    . /usr/local/bin/virtualenvwrapper_lazy.sh
-    ```
 
-    - For working with the virtual enviornment
-        -Making a virtual enviornment :
-        ```shell
-        mkvirtualenv <env_name>
-        ```
-        - Activating the enviornment :
-        ```shell
-        workon <env_name>
-        ```
-        -Deactivating the enviornment : 
-        ```shell
-        deactivate
-        ```
-        -Listing the installed packages :
-        ```shell
-        lssitepackages
-        ```
-        -Removing a virtual enviornment :
-        ```shell
-        rmvirtualenv <env_name>
-        ```
-        -For further reading follow the given link :
-            <https://virtualenvwrapper.readthedocs.io/en/stable/>
-
-2. Installing Node.js
+1. Installing Node.js
     Angular requires Node.js version 8.x or 10.x
     -To check your version, run node -v in a terminal/console window.
     -To get Node.js version 10.x refer to the following link and read the README
         <https://github.com/nodesource/distributions>
 
-3. Installing Angular
+2. Installing Angular
     For installing angular refer to the following link:
         <https://angular.io/guide/quickstart>
 
@@ -82,5 +47,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 #### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-### Editor Configuration Settings
