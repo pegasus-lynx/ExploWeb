@@ -67,48 +67,7 @@ body .card_right__details ul li {
   font-size: 14px;
   padding: 0 40px 0 0;
 }
-body .card_right__rating__stars {
-  position: relative;
-  right: 160px;
-  margin: 10px 0 10px 0;
-  /***** CSS Magic to Highlight Stars on Hover *****/
-  /* hover previous stars in list */
-}
-body .card_right__rating__stars fieldset, body .card_right__rating__stars label {
-  margin: 0;
-  padding: 0;
-}
-body .card_right__rating__stars .rating {
-  border: none;
-}
-body .card_right__rating__stars .rating > input {
-  display: none;
-}
-body .card_right__rating__stars .rating > label:before {
-  margin: 5px;
-  font-size: 1.25em;
-  display: inline-block;
-  content: "\f005";
-  font-family: FontAwesome;
-}
-body .card_right__rating__stars .rating > .half:before {
-  content: "\f089";
-  position: absolute;
-}
-body .card_right__rating__stars .rating > label {
-  color: #ddd;
-  float: right;
-}
-body .card_right__rating__stars .rating > input:checked ~ label, body .card_right__rating__stars .rating:not(:checked) > label:hover, body .card_right__rating__stars .rating:not(:checked) > label:hover ~ label {
-  /* show gold star when clicked */
-  /* hover current star */
-  color: #ffd700;
-}
-body .card_right__rating__stars .rating > input:checked + label:hover, body .card_right__rating__stars .rating > input:checked ~ label:hover, body .card_right__rating__stars .rating > label:hover ~ input:checked ~ label, body .card_right__rating__stars .rating > input:checked ~ label:hover ~ label {
-  /* hover current star when changing rating */
-  /* lighten current selection */
-  color: #ffed85;
-}
+
 body .card_right__review p {
   color: white;
   font-family: "Montserrat", sans-serif;

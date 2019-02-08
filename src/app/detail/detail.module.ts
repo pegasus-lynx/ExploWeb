@@ -5,6 +5,8 @@ import { ContactComponent } from './contact/contact.component';
 import { IntroComponent } from './intro/intro.component';
 import { RecDetailCardComponent } from './rec-detail-card/rec-detail-card.component';
 
+import { RecDetails } from './rec-detail-card/mock-rec-detail';
+
 @NgModule({
   declarations: [
     DetailComponent,
