@@ -1,6 +1,6 @@
 footer {
     background-color: #333;
-    height: 50px;
+    height: 75px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -20,8 +20,8 @@ footer {
     background: #2a5788;
     color: #fff;
     padding: 4px 8px;
-    height: 32px;
-    width: 32px;
+    height: 48px;
+    width: 48px;
     display: block;
     border-radius: 50px;
 }
