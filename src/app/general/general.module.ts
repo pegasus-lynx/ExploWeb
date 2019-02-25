@@ -7,6 +7,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { HeroComponent } from "./components/hero/hero.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
 import { AboutComponent } from "./components/about/about.component";
 import { RecommenderDetailCardComponent } from "./components/recommender-detail-card/recommender-detail-card.component";
 import { ContactCardComponent } from "./components/contact-card/contact-card.component";
@@ -29,6 +30,7 @@ import { GeneralRoutingModule } from "./general-routing.module";
         HeroComponent,
         HomeComponent,
         AboutComponent,
+        NavbarComponent,
         RecommenderDetailCardComponent,
         ContactCardComponent,
         ContactFooterComponent,

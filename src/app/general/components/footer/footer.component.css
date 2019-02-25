@@ -1,0 +1,33 @@
+footer {
+    background-color: #333;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.list-inline {
+    list-style: none;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding: 10px 8px;
+}
+
+.social-icon a {
+    background: #2a5788;
+    color: #fff;
+    padding: 4px 8px;
+    height: 48px;
+    width: 48px;
+    display: block;
+    border-radius: 50px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 18px/1 FontAwesome;
+    font-size: 16px;
+}
