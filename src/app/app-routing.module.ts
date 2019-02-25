@@ -1,22 +1,32 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
+import { PageNotFoundComponent } from "./general/components/page-not-found/page-not-found.component";
+import { AuthGuard } from "./auth/auth.guard";
+
 const appRoutes: Routes = [
-    // {
-    //     path: "/home",
-    //     component: HomeComponent,
-    //     outlet: "main"
-    // },
-    // {
-    //     path: "",
-    //     redirectTo: "/home",
-    //     pathMatch: "full"
-    // },
-    // {
-    //     path: "**",
-    //     component: PageNotFoundComponent,
-    //     outlet: "main"
-    // }
+    {
+        path: "recSys",
+        redirectTo: "/recommender",
+        pathMatch: "full"
+    },
+    {
+        path: "recommender",
+        loadChildren: "./system/system.module#SystemModule"
+    },
+    {
+        path: "user",
+        loadChildren: "./user/user.module#UserModule",
+        canLoad: [AuthGuard]
+    },
+    {
+        path: "",
+        loadChildren: "./general/general.module#GeneralModule"
+    },
+    {
+        path: "**",
+        component: PageNotFoundComponent
+    }
 ];
 
 @NgModule({

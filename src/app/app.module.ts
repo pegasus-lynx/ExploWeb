@@ -8,7 +8,7 @@ import { GeneralModule } from "./general/general.module";
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, GeneralModule],
+    imports: [BrowserModule, GeneralModule, AppRoutingModule],
     providers: [],
     bootstrap: [AppComponent]
 })

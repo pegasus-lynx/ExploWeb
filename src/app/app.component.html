@@ -1,11 +1,9 @@
-<!-- <div class="appBar">
-  <app-navbar></app-navbar>
-</div> -->
-<div>
-  <p>okay</p>
-  <app-home></app-home>
-  <!-- <router-outlet name="main"></router-outlet> -->
+<div class="appBar">
+  <router-outlet name="appNav"></router-outlet>
 </div>
-<!-- <div class="appFooter">
+<div>
+  <router-outlet name="main"></router-outlet>
+</div>
+<div class="appFooter">
   <router-outlet name="appFooter"></router-outlet>
-</div> -->
+</div>

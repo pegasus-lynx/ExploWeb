@@ -1,18 +1,38 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { HeaderComponent } from './components/header/header.component';
-import { HeroComponent } from './components/hero/hero.component';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { RecommenderDetailCardComponent } from './components/recommender-detail-card/recommender-detail-card.component';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+
+// Components.
+import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { ContactComponent } from "./components/contact/contact.component";
+import { HeaderComponent } from "./components/header/header.component";
+import { HeroComponent } from "./components/hero/hero.component";
+import { AboutComponent } from "./components/about/about.component";
+import { RecommenderDetailCardComponent } from "./components/recommender-detail-card/recommender-detail-card.component";
+import { ContactCardComponent } from "./components/contact-card/contact-card.component";
+import { ContactFooterComponent } from "./components/contact-footer/contact-footer.component";
+
+// Pages.
+import { HomeComponent } from "./pages/home/home.component";
+import { ContactUsComponent } from "./pages/contact-us/contact-us.component";
+
+// Routing.
+import { GeneralRoutingModule } from "./general-routing.module";
 
 @NgModule({
-  declarations: [PageNotFoundComponent, FooterComponent, ContactComponent, HeaderComponent, HeroComponent, HomeComponent, AboutComponent, RecommenderDetailCardComponent],
-  imports: [
-    CommonModule
-  ]
+    imports: [CommonModule, GeneralRoutingModule],
+    declarations: [
+        PageNotFoundComponent,
+        FooterComponent,
+        ContactComponent,
+        HeaderComponent,
+        HeroComponent,
+        HomeComponent,
+        AboutComponent,
+        RecommenderDetailCardComponent,
+        ContactCardComponent,
+        ContactFooterComponent,
+        ContactUsComponent
+    ]
 })
-export class GeneralModule { }
+export class GeneralModule {}
