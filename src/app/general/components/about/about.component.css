@@ -1,19 +1,11 @@
-#intro {
-    text-align: justify;
-    font-family: "Nunito", sans-serif;
-    color: #585858;
-    width: 80%;
-    margin-left: 10%;
-}
-
-#intro h2 {
+h2 {
     padding-top: 80px;
     text-align: center;
     font-family: "Fira Sans", sans-serif;
     font-size: 54px;
 }
 
-#intro p {
+p {
     padding-top: 50px;
     font-size: 24px;
 }

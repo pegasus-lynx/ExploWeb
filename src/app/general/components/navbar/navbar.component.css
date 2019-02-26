@@ -1,7 +1,7 @@
 .navCustom {
-    height: 80px;
     font-family: "Fira Sans", sans-serif;
     font-size: 20px;
+    border-bottom: 4px solid linear-gradient(to right, #4e4376, #2b5876);
 }
 
 .navbar-nav > .nav-item {

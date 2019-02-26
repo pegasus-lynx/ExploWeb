@@ -1,27 +1,30 @@
 footer {
-    background-color: #333;
-    height: 75px;
+    background-color: #292c2f;
+    height: 50px;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
+    border-top: 2px solid #000;
 }
 
 .list-inline {
     list-style: none;
+    float: right;
+    padding: 0 50px;
 }
 
 .list-inline > li {
     display: inline-block;
-    padding: 10px 8px;
+    padding: 8px 8px;
 }
 
 .social-icon a {
     background: #2a5788;
     color: #fff;
     padding: 4px 8px;
-    height: 48px;
-    width: 48px;
+    height: 34px;
+    width: 34px;
     display: block;
     border-radius: 50px;
 }

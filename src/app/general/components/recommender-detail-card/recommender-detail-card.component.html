@@ -1,17 +1,32 @@
-<div class="card" *ngFor="let detail of recdetails">
-  <div class="card_left">
-    <p>Image not available</p>
-  </div>
-  <div class="card_right">
-    <h1>{{ detail.name }}</h1>
-    <div class="card_right__details">
-      <div class="card_right__review">
-        <p>{{ detail.description }}</p>
-        <a href="#" target="_blank">Read more</a>
+<h2>Recommender Systems</h2>
+<div id="cards">
+  <div class="card" *ngFor="let detail of recdetails">
+    <div class="left">
+      <img src="#" />
+    </div>
+    <div class="right">
+      <div id="cardTitle">
+        <h1>{{ detail.name }}</h1>
+        <hr />
+        <!-- <span><i class="fas fa-chevron-circle-down"></i></span> -->
       </div>
-      <div class="card_right__button">
-        <button id="shrink">Shrink Card</button>
-      </div>
+      <div id="cardBody"></div>
     </div>
   </div>
 </div>
+
+<!-- <div class="card_left">
+      <p>Image not available</p>
+    </div>
+    <div class="card_right">
+      <h1>{{ detail.name }}</h1>
+      <div class="card_right__details">
+        <div class="card_right__review">
+          <p>{{ detail.description }}</p>
+          <a href="#" target="_blank">Read more</a>
+        </div>
+        <div class="card_right__button">
+          <button id="shrink">Shrink Card</button>
+        </div>
+      </div>
+    </div> -->
