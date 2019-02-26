@@ -1,4 +1,11 @@
-#recDetails {
-	margin-top: 10%;
-	margin-bottom: 10%;
+#mainSection {
+    margin: 200px 10%;
+    width: 80%;
+}
+
+#mainSection h1 {
+    font-family: "Baloo Bhaina", cursive;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 80px;
 }
