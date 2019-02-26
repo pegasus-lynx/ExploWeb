@@ -19,6 +19,7 @@ import { ContactUsComponent } from "./pages/contact-us/contact-us.component";
 
 // Routing.
 import { GeneralRoutingModule } from "./general-routing.module";
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
     imports: [CommonModule, GeneralRoutingModule],
@@ -34,7 +35,8 @@ import { GeneralRoutingModule } from "./general-routing.module";
         RecommenderDetailCardComponent,
         ContactCardComponent,
         ContactFooterComponent,
-        ContactUsComponent
+        ContactUsComponent,
+        DetailsComponent
     ]
 })
 export class GeneralModule {}

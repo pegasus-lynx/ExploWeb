@@ -1,0 +1,29 @@
+#mainSection {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+#mainSection h1 {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 128px;
+    margin-bottom: 64px;
+}
+
+#mainSection h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 72px;
+}
+
+#mainSection hr {
+    height: 3px;
+    margin: 25px 0;
+}
+
+#mainSection p {
+    font-size: 24px;
+}
+
+#mainSection ul {
+    font-size: 24px;
+}
