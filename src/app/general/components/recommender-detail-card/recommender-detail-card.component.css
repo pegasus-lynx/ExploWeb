@@ -8,9 +8,32 @@ h2 {
     font-size: 54px;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px;
+    grid-column-gap: 50px;
+    grid-row-gap: 100px;
+    justify-content: space-evenly;
+}
+
+.cards .card:nth-child(odd) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: auto;
+    grid-row-end: auto;
+}
+
+.cards .card:nth-child(even) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: auto;
+    grid-row-end: auto;
+}
+
 .card {
-    width: 800px;
-    height: 200px;
+    width: 1800px;
+    height: 225px;
     background: transparent;
     margin: auto;
     margin-top: 40px;
@@ -25,7 +48,7 @@ h2 {
 
 .left {
     order: -2;
-    width: 25%;
+    width: 12.5%;
     height: 100%;
     border-radius: 10px 0 0 10px;
     background: linear-gradient(to right, #4e4376, #2b5876);
@@ -42,7 +65,7 @@ h2 {
 
 .right {
     order: -1;
-    width: 75%;
+    width: 87.5%;
     background: #ffffff;
     height: 100%;
     padding: 20px;
@@ -55,9 +78,15 @@ h2 {
     font-weight: 400;
     text-align: left;
     font-size: 40px;
+    display: inline;
     padding: 0 0 0 10px;
     margin: 0;
+    padding-bottom: 0;
     letter-spacing: 1px;
+}
+
+.right span {
+    float: right;
 }
 /* .right__details ul {
     list-style-type: none;
