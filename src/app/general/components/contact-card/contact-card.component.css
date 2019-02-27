@@ -71,3 +71,35 @@ h2 {
     margin: 0;
     letter-spacing: 1px;
 }
+
+.list-inline {
+    list-style: none;
+    float: left;
+    margin-top: 190px;
+    margin-left: 50px;
+}
+.list-inline2 {
+    list-style: none;
+    float: left;
+    margin-top: 130px;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding: 8px 8px;
+}
+
+.list-inline2 > li {
+    display: inline-block;
+    padding: 8px 8px;
+}
+
+.social-icon a {
+    background: #2a5788;
+    color: #fff;
+    padding: 4px 8px;
+    height: 34px;
+    width: 34px;
+    display: block;
+    border-radius: 50px;
+}
