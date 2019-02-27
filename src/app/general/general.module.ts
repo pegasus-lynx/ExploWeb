@@ -19,7 +19,7 @@ import { ContactUsComponent } from "./pages/contact-us/contact-us.component";
 
 // Routing.
 import { GeneralRoutingModule } from "./general-routing.module";
-import { DetailsComponent } from './pages/details/details.component';
+import { DetailsComponent } from "./pages/details/details.component";
 
 @NgModule({
     imports: [CommonModule, GeneralRoutingModule],

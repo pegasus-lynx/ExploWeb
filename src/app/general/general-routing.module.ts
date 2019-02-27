@@ -13,18 +13,16 @@ const generalRoutes: Routes = [
     },
     {
         path: "contact_us",
-        component: ContactUsComponent,
-        pathMatch: "full"
+        component: ContactUsComponent
     },
     {
-        path: "details/1",
-        component: DetailsComponent,
-        pathMatch: "full"
+        path: "details/:id",
+        component: DetailsComponent
     }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(generalRoutes)],
+    imports: [RouterModule.forChild(generalRoutes)],
     exports: [RouterModule]
 })
 export class GeneralRoutingModule {}

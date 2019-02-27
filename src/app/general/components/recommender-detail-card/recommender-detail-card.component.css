@@ -88,68 +88,7 @@ h2 {
 .right span {
     float: right;
 }
-/* .right__details ul {
-    list-style-type: none;
-    padding: 0 0 0 40px;
-    margin: 10px 0 0 0;
-}
-.right__details ul li {
-    display: inline;
-    color: #e3e3e3;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 0 40px 0 0;
-}
 
-.right__review p {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    padding: 0 40px 0 40px;
-    letter-spacing: 1px;
-    margin: 10px 0 10px 0;
-    line-height: 20px;
-}
-.right__review a {
+.recLinks {
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    padding: 0 0 0 40px;
-    color: #ffda00;
-    margin: 0;
-} */
-/* .right__button {
-    padding: 0 0 0 40px;
-    margin: 30px 0 0 0;
 }
-.right__button a {
-    color: #ffda00;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    border: 2px solid #ffda00;
-    padding: 10px 10px 10px 40px;
-    font-size: 12px;
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    background-position: 7% 50%;
-    border-radius: 5px;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-.right__button a:hover {
-    color: #000;
-    background-color: #ffda00;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    background-position: 10% 50%;
-    cursor: pointer;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-} */

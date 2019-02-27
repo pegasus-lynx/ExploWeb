@@ -1,22 +1,10 @@
 <app-navbar></app-navbar>
 <app-header></app-header>
 <div id="mainSection">
-  <h1>BaRC</h1>
+  <h1>{{ recdetail.name }}</h1>
   <h2>Details</h2>
   <hr />
-  <p>
-    Researchers are producing a huge volume of articles. The spectacular growth
-    in scholarly literature is widening the choice sets overwhelmingly for
-    researchers. As a result, the researchers face difficulty in identifying a
-    suitable topic of importance from a collection of research topics. This
-    remains an ill-de ned problem for researchers due to the overload of
-    choices. The problem is even more severe for new researchers due to the lack
-    of experience. Hence, there is a definite need for a system that would help
-    researchers make decisions on appropriate topics. Recommender systems are
-    good options for performing this very task. In this report, we present a
-    recommender system to assist both novice and experienced researchers in
-    selecting research topics in their chosen field.
-  </p>
+  <p>{{ recdetail.longDescription }}</p>
   <br />
   <h2>Features</h2>
   <hr />

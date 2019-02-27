@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-
-import { RecDetails } from "./mock-rec-detail";
+import { RecommenderDetail } from "../../data/recDetail.class";
+import { RecDetailService } from "../../services/rec-detail.service";
+// import { RecDetails } from "../../data/recDetail";
 
 @Component({
     selector: "app-recommender-detail-card",
@@ -8,9 +9,11 @@ import { RecDetails } from "./mock-rec-detail";
     styleUrls: ["./recommender-detail-card.component.css"]
 })
 export class RecommenderDetailCardComponent implements OnInit {
-    recdetails = RecDetails;
+    recdetails: RecommenderDetail[];
 
-    constructor() {}
+    constructor(private detailService: RecDetailService) {
+        this.recdetails = this.detailService.getRecommederDetails();
+    }
 
     ngOnInit() {}
 }

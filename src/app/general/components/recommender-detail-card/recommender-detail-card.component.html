@@ -7,11 +7,13 @@
     <div class="right">
       <div class="cardTitle">
         <h1>{{ detail.name }}</h1>
-        <span><i class="fas fa-chevron-circle-right"></i></span>
+        <a routerLink="/details/{{ detail.id }}" class="recLinks">
+          <span><i class="fas fa-3x fa-chevron-circle-right"></i></span>
+        </a>
         <hr />
       </div>
       <div class="cardBody">
-        <p>{{ detail.description }}</p>
+        <p>{{ detail.shortDescription }}</p>
       </div>
     </div>
   </div>

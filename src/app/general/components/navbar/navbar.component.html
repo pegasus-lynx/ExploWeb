@@ -21,16 +21,35 @@
 
   <div class="collapse navbar-collapse" id="baseNav">
     <ul class="navbar-nav navbar-left" id="leftNav">
-      <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+      <li class="nav-item">
+        <a routerLink="/home" routerLinkActive="active" class="nav-link active"
+          >Home</a
+        >
+      </li>
       <li class="nav-item"><a href="#" class="nav-link">Details</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Recommender</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+      <li class="nav-item">
+        <a routerLink="/contact_us" routerLinkActive="active" class="nav-link"
+          >Contact Us</a
+        >
+      </li>
     </ul>
   </div>
   <div>
     <ul class="navbar-nav navbar-right" id="rightNav">
-      <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Signup</a></li>
+      <li class="nav-item">
+        <a routerLink="/auth/login" routerLinkActive="active" class="nav-link"
+          >Login</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          routerLink="/auth/register"
+          routerLinkActive="active"
+          class="nav-link"
+          >Signup</a
+        >
+      </li>
     </ul>
   </div>
 </nav>
