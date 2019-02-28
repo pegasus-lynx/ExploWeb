@@ -11,7 +11,7 @@ export class RecDetailService {
         return RecDetails;
     }
 
-    getRecommenderDetail(id: number | string) {
+    getRecommenderDetail(id: string) {
         if (isString(id)) {
             id = parseInt(id);
         }

@@ -9,7 +9,8 @@ export const RecDetails: RecommenderDetail[] = [
             a collection of research topics.We present a recommender system to assist both novice and
             experienced researchers in selecting research topics in their chosen field.`,
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ export const RecDetails: RecommenderDetail[] = [
                     paper of interest does not have enough citation information. To address these 
                     problems, we propose a recommendation system for academic papers that combines citation analysis and network analysis.`,
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     },
     {
         id: 3,
@@ -40,7 +42,8 @@ export const RecDetails: RecommenderDetail[] = [
                on the conference topics (among other things). Finally, the conference chair has to carry 
                out the review assignment taking into account the information provided by both the authors (about their paper) and the reviewers (about their competencies). `,
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     },
     {
         id: 4,
@@ -51,14 +54,16 @@ export const RecDetails: RecommenderDetail[] = [
                peer review process is becoming a daunting task. Different recommender systems on peer review platform is, 
                therefore, an emerging research area. In this paper, we present a novel decision support system for peer review of articles.`,
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     },
     {
         id: 5,
         name: "DISCOVER",
         shortDescription: "Basic Recommender System...",
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     },
     {
         id: 6,
@@ -71,7 +76,8 @@ export const RecDetails: RecommenderDetail[] = [
                venue recommendation framework CNAVER which just requires title and abstract to assemble the learning base fundamental for 
                generating meaningful recommendations.`,
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     },
     {
         id: 7,
@@ -84,7 +90,8 @@ export const RecDetails: RecommenderDetail[] = [
                a target researcher.In this article, we introduce a multi-level fusion based model for collaborator recommendation, 
                DRACoR (Deep learning and Random walk based Academic Collaborator Recommender)`,
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     },
     {
         id: 8,
@@ -99,6 +106,7 @@ export const RecDetails: RecommenderDetail[] = [
             we present our initiative of building a system which will recommend accurate
             citations at a faster speed for the paper under test. `,
         longDescription: "",
-        schemaImage: ""
+        schemaImage: "",
+        features: []
     }
 ];

@@ -4,4 +4,5 @@ export class RecommenderDetail {
     shortDescription: string;
     longDescription: string;
     schemaImage: string;
+    features: string[];
 }
