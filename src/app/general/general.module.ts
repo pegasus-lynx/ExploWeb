@@ -37,6 +37,7 @@ import { DetailsComponent } from "./pages/details/details.component";
         ContactFooterComponent,
         ContactUsComponent,
         DetailsComponent
-    ]
+    ],
+    exports: [NavbarComponent, HeaderComponent, FooterComponent]
 })
 export class GeneralModule {}

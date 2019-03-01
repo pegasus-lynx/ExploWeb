@@ -12,9 +12,10 @@ export class RecDetailService {
     }
 
     getRecommenderDetail(id: string) {
+        var ind: number;
         if (isString(id)) {
-            id = parseInt(id);
+            ind = parseInt(id);
         }
-        return RecDetails[id - 1];
+        return RecDetails[ind - 1];
     }
 }

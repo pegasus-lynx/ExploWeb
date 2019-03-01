@@ -7,23 +7,75 @@
 #mainSection h1 {
     font-family: "Baloo Bhaina", cursive;
     font-size: 128px;
-    margin-bottom: 64px;
+    text-align: center;
 }
 
-#mainSection h2 {
-    font-family: "Nunito", sans-serif;
+#mainSection h4 {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.subSection {
+    margin-bottom: 108px;
+    width: 80%;
+    margin-left: 10%;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.subSection h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
     font-size: 72px;
 }
 
-#mainSection hr {
-    height: 3px;
-    margin: 25px 0;
-}
-
-#mainSection p {
+.subSection p {
     font-size: 24px;
 }
 
-#mainSection ul {
+.subSection ul {
     font-size: 24px;
+    list-style-type: none;
+}
+
+.card {
+    color: #000;
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 25px;
+}
+
+#schImg {
+    width: 80%;
+    margin-left: 10%;
+    object-fit: cover;
+    margin-bottom: 80px;
+}
+
+#schImg img {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    object-fit: cover;
+}
+
+hr {
+    display: block;
+    height: 4px;
+    width: 60%;
+    margin-left: 20%;
+    border: none;
+    background-image: linear-gradient(to left, #fff, #000, #fff);
+    margin-bottom: 108px;
+    margin-top: 16px;
 }

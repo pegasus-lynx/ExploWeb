@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { RecommenderDetail } from "../../data/recDetail.class";
 import { RecDetailService } from "../../services/rec-detail.service";
-// import { RecDetails } from "../../data/recDetail";
 
 @Component({
     selector: "app-recommender-detail-card",

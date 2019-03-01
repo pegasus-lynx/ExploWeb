@@ -2,21 +2,28 @@
 <app-header></app-header>
 <div id="mainSection">
   <h1>{{ recdetail.name }}</h1>
-  <h2>Details</h2>
+  <h4>{{ recdetail.fullName }}</h4>
   <hr />
-  <p>{{ recdetail.longDescription }}</p>
-  <br />
-  <h2>Features</h2>
-  <hr />
-  <ul>
-    <li *ngFor="let feature of recdetail.features">
-      {{ feature }}
-    </li>
-  </ul>
-  <br />
-  <h2>Schema</h2>
-  <hr />
-  <div id="schImg"><img src="schemaImage" /></div>
-  <br />
+  <div class="subSection">
+    <!-- <h2>Details</h2>
+    <hr /> -->
+    <p>{{ recdetail.longDescription }}</p>
+  </div>
+  <div class="subSection">
+    <!-- <h2>Features</h2>
+    <hr /> -->
+    <ul>
+      <li *ngFor="let feature of recdetail.features">
+        <div class="card">
+          {{ feature }}
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="subSection">
+    <!-- <h2>Schema</h2>
+    <hr /> -->
+    <div id="schImg"><img [src]="recdetail.schemaImage" /></div>
+  </div>
 </div>
 <app-footer></app-footer>
