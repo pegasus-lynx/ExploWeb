@@ -12,6 +12,11 @@ const generalRoutes: Routes = [
         pathMatch: "full"
     },
     {
+        path: "home",
+        redirectTo: "",
+        pathMatch: "full"
+    },
+    {
         path: "contact_us",
         component: ContactUsComponent
     },

@@ -1,8 +1,18 @@
 export class User {
+    name: string;
+    email: string;
+    password: string;
+    username: string;
+
     constructor(
-        public name: string,
-        public email: string,
-        public password: string,
-        public username?: string
-    ) {}
+        name: string,
+        email: string,
+        password: string,
+        username?: string
+    ) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.username = username.toLowerCase();
+    }
 }
