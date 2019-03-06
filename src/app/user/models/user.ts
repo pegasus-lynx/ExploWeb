@@ -16,3 +16,8 @@ export class User {
         this.username = username.toLowerCase();
     }
 }
+
+export class UserProfile {
+    name: string;
+    email: string;
+}

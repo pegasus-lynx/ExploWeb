@@ -1,4 +1,5 @@
 .eduCard,
+.recentPubCard,
 .aoiCard {
     background: #ffffff;
     display: block;
@@ -27,4 +28,14 @@
     padding-left: 50px;
     font-size: 18px;
     font-family: "Fira Sans", sans-serif;
+}
+
+.icon {
+    display: inline-block;
+    width: 50px;
+}
+
+.rowLabel {
+    width: 150px;
+    display: inline-block;
 }
