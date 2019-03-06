@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina|Fira+Sans|Lobster|Nunito');
+@import url("https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina|Fira+Sans|Lobster|Nunito");
 
 /* font-family: 'Nunito', sans-serif;
 font-family: 'Lobster', cursive;
 font-family: 'Baloo Bhaina', cursive;
 font-family: 'ABeeZee', sans-serif;
 font-family: 'Fira Sans', sans-serif; */
+
+body {
+    background: #fafafa;
+}

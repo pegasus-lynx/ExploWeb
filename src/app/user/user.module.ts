@@ -5,20 +5,20 @@ import { UserRoutingModule } from "./user-routing.module";
 import { GeneralModule } from "src/app/general/general.module";
 
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
-import { ProfileFormComponent } from "./components/profile-form/profile-form.component";
-import { AddProfilePicComponent } from "./components/add-profile-pic/add-profile-pic.component";
 import { ProfileComponent } from './components/profile/profile.component';
 import { PrevSearchComponent } from './components/prev-search/prev-search.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+import { SideCardComponent } from './components/side-card/side-card.component';
+import { UserContactComponent } from './components/user-contact/user-contact.component';
 
 @NgModule({
     declarations: [
         DashboardComponent,
-        ProfileFormComponent,
-        AddProfilePicComponent,
         ProfileComponent,
         PrevSearchComponent,
-        EditProfileComponent
+        EditProfileComponent,
+        SideCardComponent,
+        UserContactComponent
     ],
     imports: [CommonModule, UserRoutingModule, GeneralModule]
 })
