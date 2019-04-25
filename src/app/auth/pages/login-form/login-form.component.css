@@ -1,22 +1,26 @@
-.form-group {
+#mainSection {
+    margin: auto;
+}
+
+form .form-group {
     margin: 50px 0;
 }
 
-.form-group label {
+form .form-group label {
     font-size: 24px;
     display: inline-block;
     font-family: "Open Sans", sans-serif;
 }
 
-.form-group input {
+form .form-group input {
     height: 48px;
     padding: 8px 8px;
 }
 
-.buttonGroup {
+form .buttonGroup {
     width: 100%;
 }
 
-.buttonGroup button {
+form .buttonGroup button {
     margin-right: 25px;
 }
