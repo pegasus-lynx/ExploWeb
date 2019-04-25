@@ -1,3 +1,40 @@
-<p>
-  barc-query works!
-</p>
+<app-navbar></app-navbar>
+<div id="mainSection">
+  <h1>
+    Barc Recommender
+  </h1>
+  <form [formGroup]="barcQueryForm">
+    <hr />
+
+    <div class="form-group">
+      <label for="email">Title:</label>
+      <textarea
+        class="textarea"
+        placeholder="Title..."
+        formControlName="title"
+        required
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="email">Abstract:</label>
+      <textarea
+        type="textarea"
+        class="textarea"
+        placeholder="Abstract..."
+        formControlName="abstract"
+        required
+      ></textarea>
+    </div>
+
+    <div class="buttonGroup">
+      <button
+        type="submit"
+        class="btn btn-success"
+        [disabled]="barcQueryForm.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>

@@ -1,26 +1,35 @@
 #mainSection {
+    width: 80%;
     margin: auto;
+    margin-top: 100px;
 }
 
-form .form-group {
-    margin: 50px 0;
+h1 {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 50px;
 }
 
-form .form-group label {
+hr {
+    margin-bottom: 50px;
+}
+
+.form-group label {
+    font-family: "Baloo Bhaina", cursive;
     font-size: 24px;
-    display: inline-block;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 600px;
+    display: block;
 }
 
-form .form-group input {
-    height: 48px;
-    padding: 8px 8px;
+textarea {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    height: 100px;
+    resize: none;
 }
 
-form .buttonGroup {
-    width: 100%;
-}
-
-form .buttonGroup button {
-    margin-right: 25px;
+input {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 10px 0;
 }

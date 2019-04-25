@@ -13,7 +13,7 @@ export class LoginFormComponent implements OnInit {
 
     ngOnInit() {
         this.loginForm = this.fb.group({
-            email: "",
+            username: "",
             password: ""
         });
         this.loginForm.valueChanges.subscribe(console.log);

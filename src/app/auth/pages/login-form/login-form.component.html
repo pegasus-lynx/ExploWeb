@@ -3,15 +3,14 @@
   <h1>
     Login
   </h1>
+  <hr />
   <form [formGroup]="loginForm">
-    <hr />
-
     <div class="form-group">
-      <label for="email">Email:</label>
+      <label for="username">Username:</label>
       <input
-        type="email"
-        placeholder="E-mail"
-        formControlName="email"
+        type="text"
+        placeholder="Username"
+        formControlName="username"
         required
       />
     </div>

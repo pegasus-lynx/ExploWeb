@@ -1,3 +1,29 @@
-<p>
-  barc-result works!
-</p>
+<app-navbar></app-navbar>
+<div id="mainSection">
+  <h1>Search Result</h1>
+  <h4>{{ token }}</h4>
+  <hr />
+  <div class="listCard">{{ res.title }}</div>
+  <div class="listCard">{{ res.abstract }}</div>
+  <div class="listCard">
+    <ul>
+      <li *ngFor="let author; in: res.top_authors">{{ author }}</li>
+    </ul>
+  </div>
+  <div class="listCard">
+    <ul>
+      <li *ngFor="let confrence; in: res.top_confrences">{{ confrence }}</li>
+    </ul>
+  </div>
+  <div class="listCard">
+    <ul>
+      <li *ngFor="let area; in: res.top_areas">{{ area }}</li>
+    </ul>
+  </div>
+  <div class="listCard">
+    <ul>
+      <li *ngFor="let paper; in: res.top_papers">{{ paper }}</li>
+    </ul>
+  </div>
+</div>
+<app-footer></app-footer>

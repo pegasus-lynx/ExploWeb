@@ -1,22 +1,26 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-
-import { LoginFormComponent } from "./pages/login-form/login-form.component";
-import { RegisterFormComponent } from "./pages/register-form/register-form.component";
-import { PasswordChangeComponent } from "./pages/password-change/password-change.component";
+import { BarcQueryComponent } from "./forms/barc-query/barc-query.component";
+import { BarcResultComponent } from "./results/barc-result/barc-result.component";
+import { ResultComponent } from "./components/result/result.component";
+import { TokenComponent } from "./components/token/token.component";
 
 const systemRoutes: Routes = [
     {
-        path: "login",
-        component: LoginFormComponent
+        path: "token",
+        component: TokenComponent
     },
     {
-        path: "register",
-        component: RegisterFormComponent
+        path: "query/barc",
+        component: BarcQueryComponent
     },
     {
-        path: "change/password",
-        component: PasswordChangeComponent
+        path: "result",
+        component: ResultComponent
+    },
+    {
+        path: "result/barc/:token",
+        component: BarcResultComponent
     }
 ];
 

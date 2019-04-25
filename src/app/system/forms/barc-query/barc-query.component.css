@@ -1,0 +1,29 @@
+#mainSection {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 50px;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.form-group label {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 24px;
+    font-weight: 600px;
+    display: block;
+}
+
+textarea {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    height: 100px;
+    resize: none;
+}

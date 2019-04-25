@@ -1,3 +1,23 @@
-<p>
-  result works!
-</p>
+<app-navbar></app-navbar>
+<div id="mainSection">
+  <h1>Result</h1>
+  <form [formGroup]="resultForm">
+    <hr />
+
+    <div class="form-group">
+      <label for="token">Token:</label>
+      <input type="text" placeholder="Token" formControlName="token" required />
+    </div>
+
+    <div class="buttonGroup">
+      <button
+        type="submit"
+        class="btn btn-success"
+        [disabled]="resultForm.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>
