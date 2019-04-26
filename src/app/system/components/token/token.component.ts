@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
     selector: "app-token",
@@ -6,13 +6,11 @@ import { Component, OnInit } from "@angular/core";
     styleUrls: ["./token.component.css"]
 })
 export class TokenComponent implements OnInit {
-    token: String;
+    @Input() token: string;
 
     constructor() {}
 
     ngOnInit() {
-        this.token = "barc__2019_04_15_15_39_59";
-
         // Token will be returned by the service
     }
 }

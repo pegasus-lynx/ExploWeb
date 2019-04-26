@@ -3,7 +3,7 @@
   <h1>
     Barc Recommender
   </h1>
-  <form [formGroup]="barcQueryForm">
+  <form [formGroup]="barcQueryForm" [hidden]="success" (ngSubmit)="onSubmit()">
     <hr />
 
     <div class="form-group">
@@ -36,5 +36,8 @@
       </button>
     </div>
   </form>
+</div>
+<div *ngIf="success">
+  <app-token [token]="resultToken"></app-token>
 </div>
 <app-footer></app-footer>

@@ -28,6 +28,10 @@ export interface BarcResult {
 
 // Query interfaces:
 
+export interface TokenInterface {
+    token: string;
+}
+
 export interface BarcQuery {
     title: string;
     abstract: string;

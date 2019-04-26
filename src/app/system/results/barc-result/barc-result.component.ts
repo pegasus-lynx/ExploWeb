@@ -2,7 +2,7 @@ import { Component, OnInit, DoCheck } from "@angular/core";
 
 import { SystemService } from "../../system.service";
 
-import { BarcResult, BarcResultClass } from "../../system.interface";
+import { BarcResult } from "../../system.interface";
 
 @Component({
     selector: "app-barc-result",
@@ -13,7 +13,7 @@ export class BarcResultComponent implements OnInit, DoCheck {
     resultToken: string = "none";
     oldResultToken: string = "none";
     showResult: boolean = false;
-    public res: BarcResultClass;
+    public res: BarcResult;
     public errorMsg;
 
     constructor(private ss: SystemService) {}
