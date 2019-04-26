@@ -7,6 +7,7 @@ import { GeneralModule } from "src/app/general/general.module";
 import { LoginFormComponent } from "./pages/login-form/login-form.component";
 import { RegisterFormComponent } from "./pages/register-form/register-form.component";
 import { PasswordChangeComponent } from "./pages/password-change/password-change.component";
+// import { AuthGuard } from "./auth.guard";
 
 @NgModule({
     declarations: [
@@ -21,5 +22,7 @@ import { PasswordChangeComponent } from "./pages/password-change/password-change
         AuthRoutingModule,
         GeneralModule
     ]
+    // providers: [AuthGuard],
+    // exports: [AuthGuard]
 })
 export class AuthModule {}

@@ -32,11 +32,12 @@ export class BarcResultComponent implements OnInit, DoCheck {
                 console.log(this.res);
                 console.log(this.res.title);
             });
+
+            this.oldResultToken = this.resultToken;
         }
     }
 
     updateResult(data) {
-        // this.res = new BarcResultClass(data);
         this.res = data.result;
     }
 

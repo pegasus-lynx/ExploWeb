@@ -1,7 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AuthGuard } from "./auth.guard";
-import { AuthService } from "./auth.service";
 import { LoginFormComponent } from "./pages/login-form/login-form.component";
 import { RegisterFormComponent } from "./pages/register-form/register-form.component";
 import { PasswordChangeComponent } from "./pages/password-change/password-change.component";
@@ -17,7 +16,8 @@ const authRoutes: Routes = [
     },
     {
         path: "change/password",
-        component: PasswordChangeComponent
+        component: PasswordChangeComponent,
+        canActivate: [AuthGuard]
     }
 ];
 

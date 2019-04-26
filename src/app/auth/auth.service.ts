@@ -1,25 +1,35 @@
 import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { JwtHelperService } from "@auth0/angular-jwt";
 
-import { Observable, of } from "rxjs";
-import { tap, delay } from "rxjs/operators";
+import { AccessTokenInterface, loginInterface } from "./auth.interace";
+
+import { tap } from "rxjs/operators";
 
 @Injectable({
     providedIn: "root"
 })
 export class AuthService {
-    isLoggedIn = false;
+    constructor(private http: HttpClient, public jwt: JwtHelperService) {}
 
-    // store the URL so we can redirect after logging in
-    redirectUrl: string;
+    public isLoggedIn(): boolean {
+        const token = localStorage.getItem("access_token");
+        return !this.jwt.isTokenExpired(token);
+    }
 
-    login(): Observable<boolean> {
-        return of(true).pipe(
-            delay(1000),
-            tap(val => (this.isLoggedIn = true))
+    login(baseurl: string, credentials: loginInterface) {
+        console.log(credentials);
+        return this.http.post<AccessTokenInterface>(baseurl, credentials).pipe(
+            tap(res => {
+                localStorage.setItem("access_token", res.token);
+            })
         );
     }
 
-    logout(): void {
-        this.isLoggedIn = false;
+    logout() {
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("username");
     }
+
+    register() {}
 }
