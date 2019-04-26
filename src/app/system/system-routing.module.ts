@@ -19,7 +19,7 @@ const systemRoutes: Routes = [
         component: ResultComponent
     },
     {
-        path: "result/barc/:token",
+        path: "result/barc",
         component: BarcResultComponent
     }
 ];

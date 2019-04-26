@@ -1,0 +1,58 @@
+{
+    "title": "Chinese unknown word identification as known word tagging",
+    "abstract": "This work presents a tagging approach to Chinese unknown word identification based on lexicalized hidden Markov models (LHMMs). In this work, Chinese unknown word identification is represented as a tagging task on a sequence of known words by introducing word-formation patterns and part-of-speech. Based on the lexicalized HMMs, a statistical tagger is further developed to assign each known word an appropriate tag that indicates its pattern in forming a word and the part-of-speech of the formed word. The experimental results on the Peking University corpus indicate that the use of lexicalization technique and the introduction of part-of-speech are helpful to unknown word identification. The experiment on the SIGHAN-PK open test data also shows that our system can achieve state-of-art performance.",
+    "top_papers": [
+        "Chinese Unknown Word Identification Using Character-Based Tagging And Chunking( P03-2039 ) :1.1400124415278086",
+        "Chinese Word Segmentation As LMR Tagging( W03-1728 ) :1.120905177569853",
+        "A Chinese Efficient Analyser Integrating Word Segmentation Part-Of-Speech Tagging Partial Parsing And Full Parsing( W03-1711 ) :1.0675286922153613",
+        "Statistically-Enhanced New Word Identification In A Rule-Based Chinese System( W00-1207 ) :1.0049198263881505",
+        "Unknown Word Extraction For Chinese Documents( C02-1049 ) :0.9167799776712655",
+        "Automatic Adaptation of Annotation Standards: Chinese Word Segmentation and POS Tagging &#x2013; A Case Study( P09-1059 ) :0.9165380816214401",
+        "Adaptive Chinese Word Segmentation( P04-1059 ) :0.8923720512798136",
+        "Word Identification For Mandarin Chinese Sentences( C92-1019 ) :0.8677187237131394",
+        "Combining Classifiers For Chinese Word Segmentation( W02-1815 ) :0.8531414661218295",
+        "A Discriminative Latent Variable Chinese Segmenter with Hybrid Word/Character Information( N09-1007 ) :0.8508691577211338"
+    ],
+    "top_authors": [
+        "David : 11.388637057915567",
+        "Dan : 11.185844711827054",
+        "Daniel : 10.201798308283726",
+        "Michael : 9.397397388904713",
+        "Li : 8.786957544231612",
+        "Zhang : 8.017530224783556",
+        "John : 7.628787750382981",
+        "Mark : 7.590196132424472",
+        "Liu : 7.304260362398208",
+        "Manning : 6.8550630132104375"
+    ],
+    "top_confrences": [
+        "Annual Meeting Of The Association For Computational Linguistics : 25.387323172347575",
+        "International Conference On Computational Linguistics : 17.686019966476564",
+        "EMNLP : 10.860507408363747",
+        "Conference On Empirical Methods In Natural Language Processing : 7.229933921638273",
+        "ACL : 5.573455454917632",
+        "Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies : 5.2754811499307435",
+        "Conference Of The European Association For Computational Linguistics : 4.883994045127817",
+        "International Conference On Computational Linguistics And Annual Meeting Of The Association For Computational Linguistics : 4.434390571558136",
+        "COLING-ACL : 4.3569345080689885",
+        "2007 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning (EMNLP-CoNLL) : 4.094828133992797"
+    ],
+    "active_areas": [
+        "Part of Speech Tagging : 71.71363623905671",
+        "Parsing : 68.05961439952371",
+        "Translation : 39.66271310001517",
+        "Information Extraction : 28.59533722507035"
+    ],
+    "top_tags": [
+        "abstract : 35064.17109797093",
+        "use : 34485.85412145963",
+        "base : 29462.4811520849",
+        "word : 27017.902592895145",
+        "paper : 26631.767626412067",
+        "result : 24041.202989829882",
+        "model : 24020.63239152394",
+        "present : 23132.108416368465",
+        "languag : 21792.97269865171",
+        "approach : 20527.669555623484"
+    ]
+}

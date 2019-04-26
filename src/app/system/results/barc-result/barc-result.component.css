@@ -19,3 +19,16 @@ hr {
     padding: 10px 15px;
     margin: 20px auto;
 }
+
+.form-group label {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 24px;
+    font-weight: 600px;
+    display: block;
+}
+
+input {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 10px 0;
+}

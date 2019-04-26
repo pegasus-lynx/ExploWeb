@@ -1,29 +1,32 @@
 <app-navbar></app-navbar>
 <div id="mainSection">
-  <h1>Search Result</h1>
-  <h4>{{ token }}</h4>
+  <h1>Barc Result</h1>
   <hr />
-  <div class="listCard">{{ res.title }}</div>
-  <div class="listCard">{{ res.abstract }}</div>
-  <div class="listCard">
-    <ul>
-      <li *ngFor="let author; in: res.top_authors">{{ author }}</li>
-    </ul>
+  <result-token-form (sendToken)="getToken($event)"></result-token-form>
+  <hr />
+  <div *ngIf="showResult">
+    <div class="listCard">{{ res.title }}</div>
+    <div class="listCard">{{ res.abstract }}</div>
+    <div class="listCard">
+      <ul>
+        <li *ngFor="let author of res.top_authors">{{ author }}</li>
+      </ul>
+    </div>
+    <div class="listCard">
+      <ul>
+        <li *ngFor="let confrence of res.top_confrences">{{ confrence }}</li>
+      </ul>
+    </div>
+    <div class="listCard">
+      <ul>
+        <li *ngFor="let area of res.top_areas">{{ area }}</li>
+      </ul>
+    </div>
+    <div class="listCard">
+      <ul>
+        <li *ngFor="let paper of res.top_papers">{{ paper }}</li>
+      </ul>
+    </div>
   </div>
-  <div class="listCard">
-    <ul>
-      <li *ngFor="let confrence; in: res.top_confrences">{{ confrence }}</li>
-    </ul>
-  </div>
-  <div class="listCard">
-    <ul>
-      <li *ngFor="let area; in: res.top_areas">{{ area }}</li>
-    </ul>
-  </div>
-  <div class="listCard">
-    <ul>
-      <li *ngFor="let paper; in: res.top_papers">{{ paper }}</li>
-    </ul>
-  </div>
+  <app-footer></app-footer>
 </div>
-<app-footer></app-footer>
