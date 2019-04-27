@@ -1,0 +1,42 @@
+<form [formGroup]="addJournalForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" placeholder="title" formControlName="title" required />
+  </div>
+  <div class="form-group">
+    <label for="year">Date:</label>
+    <input type="date" formControlName="year" required />
+  </div>
+  <div class="form-group">
+    <label for="journal">Journal:</label>
+    <input
+      type="text"
+      placeholder="Journal"
+      formControlName="journal"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="indexed_in">Indexed In:</label>
+    <input
+      type="text"
+      placeholder="Indexed in"
+      formControlName="indexed_in"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="authors_list">Authors:</label>
+    <input type="text" formControlName="authors_list" required />
+  </div>
+
+  <div class="buttonGroup">
+    <button
+      type="submit"
+      class="btn btn-success"
+      [disabled]="addProfileForm.invalid"
+    >
+      Submit
+    </button>
+  </div>
+</form>

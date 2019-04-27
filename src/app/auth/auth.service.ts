@@ -2,7 +2,11 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { JwtHelperService } from "@auth0/angular-jwt";
 
-import { AccessTokenInterface, loginInterface } from "./auth.interace";
+import {
+    AccessTokenInterface,
+    loginInterface,
+    registerInterface
+} from "./auth.interace";
 
 import { tap } from "rxjs/operators";
 
@@ -34,5 +38,13 @@ export class AuthService {
         return this.http.post(baseUrl, { headers: reqheaders });
     }
 
-    register() {}
+    register(baseurl: string, regService: registerInterface) {
+        return this.http.post<AccessTokenInterface>(baseurl, regService).pipe(
+            tap(res => {
+                localStorage.setItem("access_token", res.token);
+                localStorage.setItem("username", regService.username);
+                localStorage.setItem("loggedIn", "1");
+            })
+        );
+    }
 }

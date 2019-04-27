@@ -35,7 +35,7 @@
       </li>
     </ul>
   </div>
-  <div>
+  <div *ngIf="isAuthenticated; else elseBlock">
     <ul class="navbar-nav navbar-right" id="rightNav">
       <li class="nav-item">
         <a routerLink="/auth/login" routerLinkActive="active" class="nav-link"
@@ -50,11 +50,16 @@
           >Signup</a
         >
       </li>
-      <li class="nav-item" *ngIf="isAuthenticated">
+    </ul>
+  </div>
+  <ng-template>
+    <ul class="navbar-nav navbar-right" id="rightNav">
+      <li>{{ username }}</li>
+      <li class="nav-item">
         <a routerLink="/auth/logout" routerLinkActive="active" class="nav-link"
           >Logout</a
         >
       </li>
     </ul>
-  </div>
+  </ng-template>
 </nav>

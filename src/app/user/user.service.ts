@@ -2,7 +2,13 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
-import { ProfileInterface, SideInterface } from "./user.interface";
+import {
+    ProfileInterface,
+    SideInterface,
+    profileAddInterface,
+    journalInterface,
+    confrenceInterface
+} from "./user.interface";
 
 @Injectable({
     providedIn: "root"
@@ -20,7 +26,11 @@ export class UserService {
 
     updateProfile(baseUrl: string) {}
 
-    createProfile(baseUrl: string) {}
+    createProfile(baseUrl: string, details: profileAddInterface) {}
+
+    addJournal(baseUrl: string, details: journalInterface) {}
+
+    addConfrence(baseUrl: string, details: confrenceInterface) {}
 
     getPreviousSearch(baseUrl: string) {}
 }
