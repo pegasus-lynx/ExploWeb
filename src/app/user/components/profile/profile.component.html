@@ -1,22 +1,22 @@
 <div id="mainCard">
   <div class="eduCard">
     <div class="cardHeader">
-      <span>HIGHEST DEGREE OF EDUCATION</span>
+      <span>ABOUT</span>
       <br />
       <hr />
     </div>
     <div class="cardBody">
       <p>
+        <span class="icon"><i class="fas fa-lg fa-graduation-cap"></i></span>
+        <span class="rowLabel">Bio:</span>{{ profile.bio }}
+      </p>
+      <p>
         <span class="icon"><i class="fas fa-lg fa-university"></i></span>
-        <span class="rowLabel">Institute Name:</span>Researcher
+        <span class="rowLabel">Institute Name:</span>{{ profile.institution }}
       </p>
       <p>
         <span class="icon"><i class="far fa-lg fa-calendar-alt"></i></span>
-        <span class="rowLabel">Academic Year:</span>Researcher
-      </p>
-      <p>
-        <span class="icon"><i class="fas fa-lg fa-graduation-cap"></i></span>
-        <span class="rowLabel">Degree:</span>Researcher
+        <span class="rowLabel">Department:</span>{{ profile.department }}
       </p>
     </div>
   </div>
@@ -27,15 +27,14 @@
       <hr />
     </div>
     <div class="cardBody">
-      <p>
-        Recommender System, Social Network Analysis, Natural Language Processing
-        and Machine Learning
-      </p>
+      <ul>
+        <li *ngFor="let aoi of profile.area_of_interest">{{ aoi }}</li>
+      </ul>
     </div>
   </div>
   <div class="recentPubCard">
     <div class="cardHeader">
-      <span>RECENT PUBLICATIONS</span>
+      <span>JOURNALS</span>
       <br />
       <hr />
     </div>
@@ -59,6 +58,39 @@
             >Authors : Tribikram Pradhan, Pramod Kumar, Anil N S and Amit
             Bakshi.</span
           >
+        </li>
+        <li *ngFor="let journal of profile.journals">
+          <span>{{ journal.title }}</span>
+          <span class="date">{{ journal.year }}</span>
+          <span class="icon date"
+            ><i class="far fa-lg fa-calendar-alt"></i
+          ></span>
+          <br />
+          <hr />
+          <span>{{ journal.journal }}</span>
+          <br />
+          <span>{{ journal.author_list }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="recentPubCard">
+    <div class="cardHeader">
+      <span>CONFRENCES</span>
+      <br />
+      <hr />
+    </div>
+    <div class="cardBody">
+      <ul>
+        <li *ngFor="let confrence of profile.confrences">
+          <span>{{ confrence.title }}</span>
+          <span class="date">{{ confrence.year }}</span>
+          <span class="icon date"
+            ><i class="far fa-lg fa-calendar-alt"></i
+          ></span>
+          <br />
+          <hr />
+          <span>{{ confrence.author_list }}</span>
         </li>
       </ul>
     </div>

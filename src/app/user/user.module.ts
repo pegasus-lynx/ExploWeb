@@ -21,6 +21,6 @@ import { AuthGuard } from "../auth/auth.guard";
         SideCardComponent,
         UserContactComponent
     ],
-    imports: [CommonModule, UserRoutingModule, GeneralModule]
+    imports: [CommonModule, GeneralModule, UserRoutingModule]
 })
 export class UserModule {}

@@ -20,9 +20,6 @@ export class SystemService {
         baseurl: string,
         query: BarcQuery
     ): Observable<TokenInterface> {
-        // let params = new HttpParams()
-        //     .set("title", title)
-        //     .set("abstract", abstract);
         return this.http.post<TokenInterface>(baseurl, query);
     }
 

@@ -10,6 +10,9 @@ import { GeneralModule } from "./general/general.module";
 import { JwtModule } from "@auth0/angular-jwt";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import { HTTP_INTERCEPTORS } from "@angular/common/http";
+import { InterceptorService } from "./auth/interceptor.service";
+
 @NgModule({
     declarations: [AppComponent],
     imports: [
@@ -29,7 +32,13 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
             }
         })
     ],
-    providers: [],
+    providers: [
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: InterceptorService,
+            multi: true
+        }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {}

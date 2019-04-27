@@ -7,13 +7,15 @@ import { GeneralModule } from "src/app/general/general.module";
 import { LoginFormComponent } from "./pages/login-form/login-form.component";
 import { RegisterFormComponent } from "./pages/register-form/register-form.component";
 import { PasswordChangeComponent } from "./pages/password-change/password-change.component";
+import { LogoutComponent } from './pages/logout/logout.component';
 // import { AuthGuard } from "./auth.guard";
 
 @NgModule({
     declarations: [
         LoginFormComponent,
         RegisterFormComponent,
-        PasswordChangeComponent
+        PasswordChangeComponent,
+        LogoutComponent
     ],
     imports: [
         CommonModule,

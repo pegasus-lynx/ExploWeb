@@ -1,27 +1,27 @@
 <div id="sideCard">
   <div class="profile-name">
-    <span class="name">Brian Adams</span>
+    <span class="name">{{ info.name }}</span>
     <br />
-    <span class="job">Researcher</span>
+    <span class="job">{{ info.role }}</span>
   </div>
   <figure class="profile-image">
     <img src="https://cse-iitbhu.github.io/irlab/img/Tribikram_Pradhan.jpg" />
   </figure>
   <ul class="profile-information">
     <li>
-      <p><span>Name:</span>Brian Adams</p>
+      <p><span>Name:</span>{{ info.name }}</p>
     </li>
     <li>
-      <p><span>Role:</span>Researcher</p>
+      <p><span>Role:</span>{{ info.role }}</p>
     </li>
     <li>
-      <p><span>Institute:</span>Oxford University</p>
+      <p><span>DOB:</span>{{ info.dob }}</p>
     </li>
     <li>
-      <p><span>Department:</span>Computer Science</p>
+      <p><span>Department:</span>{{ info.institution }}</p>
     </li>
     <li>
-      <p><span>Email:</span>brian.adams.cse17@itbhu.ac.in</p>
+      <p><span>Email:</span>{{ info.email }}</p>
     </li>
   </ul>
 </div>

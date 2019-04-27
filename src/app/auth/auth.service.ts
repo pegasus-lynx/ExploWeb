@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { JwtHelperService } from "@auth0/angular-jwt";
 
 import { AccessTokenInterface, loginInterface } from "./auth.interace";
@@ -18,7 +18,6 @@ export class AuthService {
     }
 
     login(baseurl: string, credentials: loginInterface) {
-        console.log(credentials);
         return this.http.post<AccessTokenInterface>(baseurl, credentials).pipe(
             tap(res => {
                 localStorage.setItem("access_token", res.token);
@@ -26,9 +25,13 @@ export class AuthService {
         );
     }
 
-    logout() {
-        localStorage.removeItem("access_token");
-        localStorage.removeItem("username");
+    logout(baseUrl: string) {
+        const reqheaders = new HttpHeaders({
+            "Content-Type": "application/json",
+            Authorization: "Token " + localStorage.getItem("access_token")
+        });
+
+        return this.http.post(baseUrl, { headers: reqheaders });
     }
 
     register() {}

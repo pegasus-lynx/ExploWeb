@@ -4,6 +4,7 @@ import { AuthGuard } from "./auth.guard";
 import { LoginFormComponent } from "./pages/login-form/login-form.component";
 import { RegisterFormComponent } from "./pages/register-form/register-form.component";
 import { PasswordChangeComponent } from "./pages/password-change/password-change.component";
+import { LogoutComponent } from "./pages/logout/logout.component";
 
 const authRoutes: Routes = [
     {
@@ -13,6 +14,10 @@ const authRoutes: Routes = [
     {
         path: "register",
         component: RegisterFormComponent
+    },
+    {
+        path: "logout",
+        component: LogoutComponent
     },
     {
         path: "change/password",

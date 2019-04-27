@@ -50,6 +50,11 @@
           >Signup</a
         >
       </li>
+      <li class="nav-item" *ngIf="isAuthenticated">
+        <a routerLink="/auth/logout" routerLinkActive="active" class="nav-link"
+          >Logout</a
+        >
+      </li>
     </ul>
   </div>
 </nav>
