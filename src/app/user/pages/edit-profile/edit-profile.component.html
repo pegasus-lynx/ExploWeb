@@ -1,46 +1,70 @@
-<div id="mainCard">
-  <!-- <form (ngSubmit)="onSubmit()" #editForm="ngForm"> -->
-  <div class="eduCard">
-    <div class="cardHeader">
-      <span>HIGHEST DEGREE OF EDUCATION</span>
-      <br />
-      <hr />
+<app-navbar></app-navbar>
+<div id="mainSection">
+  <h1>
+    Edit Prodile
+  </h1>
+  <hr />
+  <form [formGroup]="editProfileForm" (ngSubmit)="onSubmit()">
+    <h3>Basic Information:</h3>
+    <hr />
+    <div class="form-group">
+      <label for="role">Role:</label>
+      <select formControlName="role">
+        <option value="0">Student</option>
+        <option value="1">Researcher</option>
+        <option value="2">Professor</option>
+        <option value="3">Other</option>
+      </select>
     </div>
-    <div class="cardBody">
-      <p>
-        <span class="icon"><i class="fas fa-lg fa-university"></i></span>
-        <span class="rowLabel">Institute Name:</span>
-        <!-- <input
-            type="password"
-            class="form-control"
-            [(ngModel)]="user.password"
-            name="password"
-            required
-            #password="ngModel"
-          /> -->
-      </p>
-      <p>
-        <span class="icon"><i class="far fa-lg fa-calendar-alt"></i></span>
-        <span class="rowLabel">Academic Year:</span>Researcher
-      </p>
-      <p>
-        <span class="icon"><i class="fas fa-lg fa-graduation-cap"></i></span>
-        <span class="rowLabel">Degree:</span>Researcher
-      </p>
+
+    <div class="form-group">
+      <label for="bio">Bio:</label>
+      <input type="text" placeholder="Bio" formControlName="bio" required />
     </div>
-  </div>
-  <div class="aoiCard">
-    <div class="cardHeader">
-      <span>AREA OF INTEREST</span>
-      <br />
-      <hr />
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <input type="" formControlName="gender" />
     </div>
-    <div class="cardBody">
-      <p>
-        Recommender System, Social Network Analysis, Natural Language Processing
-        and Machine Learning
-      </p>
+    <div class="form-group">
+      <label for="department">Department:</label>
+      <input
+        type="text"
+        placeholder="Deptartment"
+        formControlName="department"
+      />
     </div>
-  </div>
-  <!-- </form> -->
+    <div class="form-group">
+      <label for="institution">Institution:</label>
+      <input
+        type="text"
+        placeholder="Institution"
+        formControlName="institution"
+      />
+    </div>
+    <div class="form-group">
+      <label for="dob">DOB:</label>
+      <input type="date" formControlName="dob" required />
+    </div>
+
+    <div class="form-group">
+      <label for="area_of_interest">Area of Interest:</label>
+      <input
+        type="text"
+        formControlName="area_of_interest"
+        placeholder="Machine Learning, Computer Vision"
+        required
+      />
+    </div>
+
+    <div class="buttonGroup">
+      <button
+        type="submit"
+        class="btn btn-success"
+        [disabled]="addProfileForm.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
 </div>
+<app-footer></app-footer>

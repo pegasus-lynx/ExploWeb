@@ -24,7 +24,9 @@ export class UserService {
         return this.http.get<SideInterface>(baseUrl);
     }
 
-    updateProfile(baseUrl: string) {}
+    editProfile(baseUrl: string, details: profileAddInterface) {
+        return this.http.put<ProfileInterface>(baseUrl, details);
+    }
 
     createProfile(baseUrl: string, details: profileAddInterface) {
         return this.http.post<ProfileInterface>(baseUrl, details);

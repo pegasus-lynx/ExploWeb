@@ -1,30 +1,35 @@
-.eduCard,
-.aoiCard {
-    background: #ffffff;
+#mainSection {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 50px;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.form-group label {
+    font-family: "Baloo Bhaina", cursive;
+    font-size: 24px;
+    font-weight: 600px;
     display: block;
-    width: 100%;
-    border-radius: 10px;
-    padding: 20px 30px;
-    margin-top: 20px;
-    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
-    -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
 }
 
-.cardHeader {
-    font-size: 21px;
-    font-weight: 600;
-    color: #515151;
-    text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+textarea {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    height: 100px;
+    resize: none;
 }
 
-.date {
-    float: right;
-}
-
-.cardBody {
-    padding-left: 50px;
-    font-size: 18px;
-    font-family: "Fira Sans", sans-serif;
+input {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 10px 0;
 }
