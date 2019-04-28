@@ -24,7 +24,7 @@ export class RegisterFormComponent implements OnInit {
             last_name: "",
             email: "",
             password: "",
-            confirmpassword: ""
+            username: ""
         });
     }
 

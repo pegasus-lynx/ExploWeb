@@ -7,6 +7,15 @@
   <form [formGroup]="addProfileForm" (ngSubmit)="onSubmit()">
     <h3>Basic Information:</h3>
     <hr />
+    <div class="form-group">
+      <label for="role">Role:</label>
+      <select formControlName="role">
+        <option value="0">Student</option>
+        <option value="1">Researcher</option>
+        <option value="2">Professor</option>
+        <option value="3">Other</option>
+      </select>
+    </div>
 
     <div class="form-group">
       <label for="bio">Bio:</label>
@@ -35,6 +44,16 @@
     <div class="form-group">
       <label for="dob">DOB:</label>
       <input type="date" formControlName="dob" required />
+    </div>
+
+    <div class="form-group">
+      <label for="area_of_interest">Area of Interest:</label>
+      <input
+        type="text"
+        formControlName="area_of_interest"
+        placeholder="Machine Learning, Computer Vision"
+        required
+      />
     </div>
 
     <div class="buttonGroup">

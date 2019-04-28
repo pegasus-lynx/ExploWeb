@@ -34,11 +34,6 @@ const userRoutes: Routes = [
         path: "profile/add",
         component: AddProfileComponent,
         pathMatch: "full"
-    },
-    {
-        path: "profile/edit",
-        component: EditProfileComponent,
-        pathMatch: "full"
     }
 ];
 

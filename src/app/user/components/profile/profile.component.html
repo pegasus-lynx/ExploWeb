@@ -34,53 +34,17 @@
   </div>
   <div class="recentPubCard">
     <div class="cardHeader">
-      <span>JOURNALS</span>
-      <br />
-      <hr />
-    </div>
-    <div class="cardBody">
-      <ul>
-        <li>
-          <span>Publication 1</span>
-          <span class="date">2018</span>
-          <span class="icon date"
-            ><i class="far fa-lg fa-calendar-alt"></i
-          ></span>
-
-          <br />
-          <hr />
-          <span
-            >International Journal of Engineering and Technology (IJET) (Indexed
-            in Scopus)</span
-          >
-          <br />
-          <span
-            >Authors : Tribikram Pradhan, Pramod Kumar, Anil N S and Amit
-            Bakshi.</span
-          >
-        </li>
-        <li *ngFor="let journal of profile.journals">
-          <span>{{ journal.title }}</span>
-          <span class="date">{{ journal.year }}</span>
-          <span class="icon date"
-            ><i class="far fa-lg fa-calendar-alt"></i
-          ></span>
-          <br />
-          <hr />
-          <span>{{ journal.journal }}</span>
-          <br />
-          <span>{{ journal.author_list }}</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="recentPubCard">
-    <div class="cardHeader">
       <span>CONFRENCES</span>
+      <span class="edit-icon" (click)="editMode(1)">
+        <i class="fas fa-1x fa-pen-square"></i>
+      </span>
       <br />
       <hr />
     </div>
-    <div class="cardBody">
+    <div class="cardBody" *ngIf="inEditConfrenceMode; else elseBlockC">
+      <add-confrences></add-confrences>
+    </div>
+    <ng-template #elseBlockC>
       <ul>
         <li *ngFor="let confrence of profile.confrences">
           <span>{{ confrence.title }}</span>
@@ -89,10 +53,37 @@
             ><i class="far fa-lg fa-calendar-alt"></i
           ></span>
           <br />
-          <hr />
-          <span>{{ confrence.author_list }}</span>
         </li>
       </ul>
+    </ng-template>
+  </div>
+  <div class="recentPubCard">
+    <div class="cardHeader">
+      <span>JOURNALS</span>
+      <span class="edit-icon" (click)="editMode(2)">
+        <i class="fas fa-1x fa-pen-square"></i>
+      </span>
+      <br />
+      <br />
+      <hr />
     </div>
+    <div class="cardBody" *ngIf="inEditJounalMode; else elseBlockJ">
+      <add-journals></add-journals>
+    </div>
+    <ng-template #elseBlockJ>
+      <ul>
+        <li *ngFor="let journal of profile.journals">
+          <span>{{ journal.title }}</span>
+          <span class="date">{{ journal.year }}</span>
+          <span class="icon date"
+            ><i class="far fa-lg fa-calendar-alt"></i
+          ></span>
+          <br />
+          <span>{{ journal.journal }}</span>
+          <br />
+          <span *ngFor="let author of journal.authors_list">{{ author }}</span>
+        </li>
+      </ul>
+    </ng-template>
   </div>
 </div>

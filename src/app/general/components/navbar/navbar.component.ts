@@ -6,7 +6,7 @@ import { Component, OnInit, DoCheck } from "@angular/core";
     styleUrls: ["./navbar.component.css"]
 })
 export class NavbarComponent implements OnInit {
-    isAuthenticated: boolean;
+    isAuthenticated: boolean = false;
     username: string;
 
     constructor() {}
@@ -15,16 +15,19 @@ export class NavbarComponent implements OnInit {
         const loggedIn = localStorage.getItem("loggedIn");
         if (loggedIn == "1") {
             this.isAuthenticated = true;
+            this.username = localStorage.getItem("username");
+        } else {
+            this.isAuthenticated = false;
         }
-
-        this.username = localStorage.getItem("username");
     }
 
     ngDoCheck() {
         const loggedIn = localStorage.getItem("loggedIn");
         if (loggedIn == "1") {
             this.isAuthenticated = true;
+            this.username = localStorage.getItem("username");
+        } else {
+            this.isAuthenticated = false;
         }
-        this.username = localStorage.getItem("username");
     }
 }

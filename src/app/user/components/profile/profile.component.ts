@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, DoCheck } from "@angular/core";
 import { UserService } from "../../user.service";
 import { ProfileInterface } from "../../user.interface";
 
@@ -9,6 +9,8 @@ import { ProfileInterface } from "../../user.interface";
 })
 export class ProfileComponent implements OnInit {
     profile: ProfileInterface;
+    inEditConfrenceMode: boolean = false;
+    inEditJournalMode: boolean = false;
 
     constructor(private serve: UserService) {}
 
@@ -17,6 +19,17 @@ export class ProfileComponent implements OnInit {
 
         this.serve.getProfile(baseUrl).subscribe(data => {
             this.profile = data;
+            console.log(this.profile);
         });
+    }
+
+    editMode(ind: number) {
+        if (ind == 1) {
+            this.inEditConfrenceMode = true;
+        }
+
+        if (ind == 2) {
+            this.inEditJournalMode = true;
+        }
     }
 }

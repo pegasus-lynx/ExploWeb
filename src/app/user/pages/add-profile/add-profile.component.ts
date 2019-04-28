@@ -21,16 +21,21 @@ export class AddProfileComponent implements OnInit {
     ngOnInit() {
         this.addProfileForm = this.fb.group({
             bio: "",
+            role: "",
             gender: "M",
             department: "",
             institution: "",
-            dob: ""
+            dob: "",
+            area_of_interest: ""
         });
     }
 
     onSubmit() {
-        const details: profileAddInterface = this.addProfileForm.value;
-        let baseUrl: string = "http://127.0.0.1:8000/user/profile/create/";
+        let details: profileAddInterface = this.preprocessData(
+            this.addProfileForm.value
+        );
+        console.log(details);
+        let baseUrl: string = "http://127.0.0.1:8000/user/self/create/";
         this.serve.createProfile(baseUrl, details).subscribe(
             data => {
                 console.log(data);
@@ -40,5 +45,15 @@ export class AddProfileComponent implements OnInit {
                 console.log(err);
             }
         );
+    }
+
+    preprocessData(rawDetails) {
+        let str = rawDetails.area_of_interest;
+        rawDetails.area_of_interest = this.convertToArray(str);
+        return rawDetails;
+    }
+
+    convertToArray(str: string) {
+        return str.split(",");
     }
 }

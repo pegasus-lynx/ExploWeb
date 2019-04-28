@@ -26,11 +26,17 @@ export class UserService {
 
     updateProfile(baseUrl: string) {}
 
-    createProfile(baseUrl: string, details: profileAddInterface) {}
+    createProfile(baseUrl: string, details: profileAddInterface) {
+        return this.http.post<ProfileInterface>(baseUrl, details);
+    }
 
-    addJournal(baseUrl: string, details: journalInterface) {}
+    addJournal(baseUrl: string, details: journalInterface) {
+        return this.http.post<journalInterface>(baseUrl, details);
+    }
 
-    addConfrence(baseUrl: string, details: confrenceInterface) {}
+    addConfrence(baseUrl: string, details: confrenceInterface) {
+        return this.http.post<confrenceInterface>(baseUrl, details);
+    }
 
     getPreviousSearch(baseUrl: string) {}
 }

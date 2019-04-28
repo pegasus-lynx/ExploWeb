@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { UserRoutingModule } from "./user-routing.module";
 import { GeneralModule } from "src/app/general/general.module";
 
@@ -11,9 +11,9 @@ import { EditProfileComponent } from "./pages/edit-profile/edit-profile.componen
 import { SideCardComponent } from "./components/side-card/side-card.component";
 import { UserContactComponent } from "./components/user-contact/user-contact.component";
 import { AuthGuard } from "../auth/auth.guard";
-import { AddProfileComponent } from './pages/add-profile/add-profile.component';
-import { AddJournalsComponent } from './pages/add-journals/add-journals.component';
-import { AddConfrencesComponent } from './pages/add-confrences/add-confrences.component';
+import { AddProfileComponent } from "./pages/add-profile/add-profile.component";
+import { AddJournalsComponent } from "./pages/add-journals/add-journals.component";
+import { AddConfrencesComponent } from "./pages/add-confrences/add-confrences.component";
 
 @NgModule({
     declarations: [
@@ -27,6 +27,12 @@ import { AddConfrencesComponent } from './pages/add-confrences/add-confrences.co
         AddJournalsComponent,
         AddConfrencesComponent
     ],
-    imports: [CommonModule, GeneralModule, UserRoutingModule]
+    imports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        UserRoutingModule,
+        GeneralModule
+    ]
 })
 export class UserModule {}
