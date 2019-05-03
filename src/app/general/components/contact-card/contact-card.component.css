@@ -50,6 +50,20 @@ h2 {
 
 .basicList ul {
     list-style-type: none;
+    padding: 0;
+}
+
+.basicList ul li > span {
+    padding-right: 10px;
+}
+
+.linkList ul li > span {
+    padding-right: 10px;
+}
+
+.linkList ul li span {
+    font-family: "Fira Sans" sans-serif;
+    font-weight: 600;
 }
 
 .right {

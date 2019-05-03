@@ -8,6 +8,27 @@ footer {
     border-top: 2px solid #000;
 }
 
+.name-inline {
+    list-style: none;
+    float: left;
+    padding: 5px 50px;
+}
+
+.name-inline > li {
+    display: inline-block;
+    padding: 8px 8px;
+    color: white;
+    font-family: "Fira Sans" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.name-inline > #brand {
+    font-size: 30px;
+    font-family: "Baloo Bhaina", cursive;
+    color: white;
+}
+
 .list-inline {
     list-style: none;
     float: right;

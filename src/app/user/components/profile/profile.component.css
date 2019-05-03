@@ -7,6 +7,7 @@
     border-radius: 10px;
     padding: 20px 30px;
     margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
     -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
     -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
@@ -38,4 +39,13 @@
 .rowLabel {
     width: 150px;
     display: inline-block;
+}
+
+.cardHeader .edit-icon {
+    display: inline-block;
+    float: right;
+}
+
+#mainCard {
+    margin-bottom: 50px;
 }

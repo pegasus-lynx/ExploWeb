@@ -22,12 +22,38 @@
   <div class="collapse navbar-collapse" id="baseNav">
     <ul class="navbar-nav navbar-left" id="leftNav">
       <li class="nav-item">
-        <a routerLink="/home" routerLinkActive="active" class="nav-link active"
+        <a routerLink="/home" routerLinkActive="active" class="nav-link"
           >Home</a
         >
       </li>
-      <li class="nav-item"><a href="#" class="nav-link">Details</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Recommender</a></li>
+      <div class="dropdown">
+        <li class="nav-item">
+          <a href="#" class="nav-link"
+            >Details<i class="fas fa-caret-down"></i
+          ></a>
+        </li>
+        <div class="dropdown-content">
+          <a routerLink="/details/1">BARC</a>
+          <a routerLink="/details/2">LITREC</a>
+          <a routerLink="/details/3">EAR</a>
+          <a routerLink="/details/4">RPRS</a>
+          <a routerLink="/details/5">DISCOVER</a>
+          <a routerLink="/details/6">CNAVER</a>
+          <a routerLink="/details/7">DRACOR</a>
+          <a routerLink="/details/8">HDM</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <li class="nav-item">
+          <a href="#" class="nav-link"
+            >Recommender<i class="fas fa-caret-down"></i
+          ></a>
+        </li>
+        <div class="dropdown-content">
+          <a routerLink="/recommender/query/barc">BARC Query</a>
+          <a routerLink="/recommender/result/barc">BARC Result</a>
+        </div>
+      </div>
       <li class="nav-item">
         <a routerLink="/contact_us" routerLinkActive="active" class="nav-link"
           >Contact Us</a
@@ -37,7 +63,9 @@
   </div>
   <div *ngIf="isAuthenticated; else elseBlock">
     <ul class="navbar-nav navbar-right" id="rightNav">
-      <li>{{ username }}</li>
+      <li class="nav-item username">
+        <a>{{ username }}</a>
+      </li>
       <li class="nav-item">
         <a routerLink="/auth/logout" routerLinkActive="active" class="nav-link"
           >Logout</a

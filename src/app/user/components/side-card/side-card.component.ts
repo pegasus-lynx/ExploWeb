@@ -9,6 +9,7 @@ import { SideInterface } from "../../user.interface";
 })
 export class SideCardComponent implements OnInit {
     info: SideInterface;
+    role: string;
 
     constructor(private serve: UserService) {}
 
@@ -17,6 +18,25 @@ export class SideCardComponent implements OnInit {
 
         this.serve.getUserInfo(baseUrl).subscribe(data => {
             this.info = data;
+            this.role = this.getRole(this.info.role);
         });
+
+        // console.log(this.info.role);
+
+        // console.log(this.role);
+    }
+
+    getRole(role: number) {
+        console.log(role);
+        if (role == 0) {
+            return "Student";
+        } else if (role == 1) {
+            console.log("OK");
+            return "Researcher";
+        } else if (role == 2) {
+            return "Professor";
+        } else {
+            return "Others";
+        }
     }
 }

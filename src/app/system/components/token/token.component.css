@@ -1,20 +1,42 @@
-h2 {
+#mainCard {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 75px;
+    background: white;
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+
+.cardHeader h1 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #515151;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cardBody {
+    margin-top: 30px;
+}
+
+.cardBody p {
+    padding-left: 50px;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.cardBody h2 {
     border-radius: 5px;
     background: #dadada;
     text-align: center;
     color: #000;
     padding: 20px 0;
-    font-family: "Baloo Bhaina", cursive;
+    font-family: "Open Sans" sans-serif;
+    font-weight: 600px;
     font-size: 50px;
-}
-
-p {
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 20px;
-    font-family: "Fira Sans" sans-serif;
 }
 
 h3 {

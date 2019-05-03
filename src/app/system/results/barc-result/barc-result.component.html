@@ -5,27 +5,64 @@
   <result-token-form (sendToken)="getToken($event)"></result-token-form>
   <hr />
   <div *ngIf="showResult">
-    <div class="listCard">{{ res.title }}</div>
-    <div class="listCard">{{ res.abstract }}</div>
     <div class="listCard">
-      <ul>
-        <li *ngFor="let author of res.top_authors">{{ author }}</li>
-      </ul>
+      <div class="cardHeader">
+        TITLE
+        <hr />
+      </div>
+      <div class="cardBody">
+        {{ res.title }}
+      </div>
     </div>
     <div class="listCard">
-      <ul>
-        <li *ngFor="let confrence of res.top_confrences">{{ confrence }}</li>
-      </ul>
+      <div class="cardHeader">
+        ABSTRACT
+        <hr />
+      </div>
+      <div class="cardBody">
+        {{ res.abstract }}
+      </div>
     </div>
     <div class="listCard">
-      <ul>
-        <li *ngFor="let area of res.top_areas">{{ area }}</li>
-      </ul>
+      <div class="cardHeader">
+        TOP AUTHORS
+        <hr />
+      </div>
+      <div class="cardBody">
+        <ul>
+          <li *ngFor="let author of res.top_authors">{{ author }}</li>
+        </ul>
+      </div>
     </div>
     <div class="listCard">
-      <ul>
-        <li *ngFor="let paper of res.top_papers">{{ paper }}</li>
-      </ul>
+      <div class="cardHeader">
+        TOP CONFERENCES
+        <hr />
+      </div>
+      <div class="cardBody">
+        <ul>
+          <li *ngFor="let confrence of res.top_confrences">{{ confrence }}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="listCard">
+      <div class="cardHeader">TOP AREAS OF RESEARCH</div>
+      <div class="cardBody">
+        <ul>
+          <li *ngFor="let area of res.top_areas">{{ area }}</li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="listCard">
+      <div class="cardHeader">
+        TOP PAPERS
+        <hr />
+      </div>
+      <div class="cardBody">
+        <ul>
+          <li *ngFor="let paper of res.top_papers">{{ paper }}</li>
+        </ul>
+      </div>
     </div>
   </div>
   <app-footer></app-footer>
